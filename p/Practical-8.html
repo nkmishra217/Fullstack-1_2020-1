@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        #container {
+            border: 5px solid lightgrey;
+            width: 100%;
+        }
+        h3 {
+            text-align: center;
+        }
+        #header {
+            height:80px;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: larger;
+            position: fixed;
+            top: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        ul li {
+            float: left;
+            margin: 20px;
+        }
+         #header a:link, a:visited {
+            color: white;
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+        }
+        #header a:hover {
+            background-color: white;
+            color: black;
+        }
+        #banner {
+            height: 600px;
+            color: white;
+            font-size: larger;
+            margin-bottom: 10px;
+            background-image: url("../images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+            background-size: 100% 600px;
+            background-position: center;
+            margin-top: 90px;
+        }
+        #section1 {
+            height: 350px;
+            margin-bottom: 10px;
+        
+        }
+        #leftSide {
+            height: 300px;
+            width: 45%;
+            float: left;
+        }
+        #circle1 {
+            width: 200px;
+            float: left;
+            height: 200px;
+        }
+        #circle2 {
+            width: 200px;
+            float: right;
+            height: 200px;
+        }
+        #rightSide {
+            height: 300px;
+            width: 45%;
+            float: right;
+        }
+        #circle3 {
+            width: 200px;
+            float: left;
+            height: 200px;
+        }
+        #circle4 {
+            width: 200px;
+            float: right;
+            height: 200px;
+        }
+        #section1 img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+        #section2 {
+            height: 600px;
+            margin-bottom: 10px;
+        }
+        #left {
+            height: 550px;
+            width: 45%;
+            float: left;
+        }
+        #mainContent {
+            height: 550px;
+            background-color: rgba(128, 128, 128, 0.89);
+            width: 100%;
+            color: white;
+            font-size: smaller;
+        }
+        #right {
+            width: 45%;
+            height: 500px;
+            float: right;
+        }
+        #article1 {
+            height: 160px;
+            color: white;
+            font-size: larger;
+            margin-bottom: 5px;
+            margin-top: 20px;
+            background-image: url("../images/p1.jpg");
+            background-size: 100% 160px;
+        }
+        #article2 {
+            height: 160px;
+            color: white;
+            font-size: larger;
+            margin-bottom: 5px;
+            background-image: url("../images/p2.jpeg");
+            background-size: 100% 160px;
+        }
+        #article3 {
+            height: 160px;
+            color: white;
+            font-size: larger;
+            margin-bottom: 5px;
+            background-image: url("../images/p3.jpg");
+            background-size: 100% 160px;
+        }
+        #section2 img {
+            height: 160px;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        #section3 {
+            height: 400px;
+            margin-bottom: 10px;
+        }
+        #square1 {
+            width: 250px;
+            height: 300px;
+            background-color: lightgray;
+            float: left;
+        }
+        #square2 {
+            width: 250px;
+            height: 300px;
+            background-color: lightgray;
+            float: right;
+        }
+        #square3 {
+            width: 250px;
+            height: 300px;
+            background-color: lightgray;
+            float: left;
+        }
+        #square4 {
+            width: 250px;
+            height: 300px;
+            background-color: lightgray;
+            float: right;
+        }
+        #section3 img {
+            width: 240px;
+            height: 100px;
+            margin: 5px;
+        }
+        #section3 a:link, a:visited {
+            text-align: center;
+            background-color: red;
+            display: block;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #footer {
+            height:80px;
+            background-color:skyblue;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-bottom: 10px;
+            font-size: larger;
+        }
+        #footer a:visited {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="top"></div>
+        <div id="header"><ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#section1">ABOUT US</a></li>
+            <li><a href="#section2">TEAM</a></li>
+            <li><a href="#section3">TECHNOLOGIES</a></li>
+            <li><a href="#section4">CONTACT</a></li>
+        </ul></div>
+        <div id="banner"><h1 style="color: white">PRACTICAL-8</h1></div>
+        <div id="section1">
+            <h3>TEAM MEMBERS</h3>
+            <div id="leftSide">
+                <div id="circle1"><img src="../images/1.png" border-radius=50%></div>
+                <div id="circle2"><img src="../images/2.png"></div>
+            </div>
+            <div id="rightSide">
+                <div id="circle3"><img src="../images/3.png"></div>
+                <div id="circle4"><img src="../images/9.png"></div>
+            </div>
+        </div>
+        <div id="section2">
+            <h3>ABOUT US</h3>
+            <div id="left">
+                <div id="mainContent">
+                    <h2>About Project</h>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, fugit dolore. Exercitationem cum mollitia repellat, dolorem totam 
+                        sunt, laborum eveniet placeat id veniam labore ipsam explicabo facilis officiis illum excepturi nisi impedit dolore vitae eum harum 
+                        doloribus aspernatur voluptas provident? A laboriosam id harum at omnis, sunt quas quo eligendi quia obcaecati doloribus quis iusto 
+                        dolorum voluptates libero praesentium, ut quisquam non voluptatem, perspiciatis excepturi itaque? Sed ex exercitationem nulla doloremque
+                         dolores voluptas nihil perspiciatis possimus, temporibus tempore. Dignissimos tempora consequatur reprehenderit ut soluta. 
+                         Culpa commodi veritatis perferendis, saepe earum ipsam voluptas officiis sapiente minus corporis assumenda officia, vitae, eos 
+                         nobis accusamus doloremque? Laboriosam, ad id ut inventore magnam dolorum quia et pariatur laudantium! Fugit, cupiditate, inventore 
+                         consectetur tenetur doloribus quo ipsa asperiores distinctio magnam adipisci laudantium necessitatibus at porro commodi culpa officia 
+                         fugiat error praesentium quam. Fugiat, consequuntur? Quam, asperiores optio accusamus alias ullam natus! Sequi labore inventore porro?</p>
+                </div>
+            </div>
+            <div id="right">
+                <div id="article1"><h1 style="color: black; text-align: center;">Project-1</h1></div>
+                <div id="article2"><h1 style="color: black; text-align: center;">Project-2</h1></div>
+                <div id="article3"><h1 style="color: black; text-align: center;">Project-3</h1></div>
+            </div>
+        </div>
+        <div id="section3">
+            <h3>TECHNOLOGIES USED</h3>
+            <div id="leftSide">
+            <div id="square1"><img src="../images/intoduction to html.png">
+                <h3>Introduction to HTML</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.</p>
+                <a href="htmlintro.html">Read More</a></div>
+            <div id="square2"><img src="../images/getcss.png">
+                <h3>Introduction to CSS</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.</p>
+                <a href="cssintro.html">Read More</a></div>
+            </div>
+            <div id="rightSide">
+            <div id="square3"><img src="../images/introduction to javascript.jpg">
+                <h3>Introduction to JavaScript</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.</p>
+                <a href="javascriptintro.html">Read More</a></div>
+            <div id="square4"><img src="../images/bootstrap2.png">
+                <h3>Introduction to Bootstrap</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, beatae.</p>
+                <a href="bootstrapintro.html">Read More</a></div>
+            </div>
+        </div>
+        <div id="section4">
+            <h3>CONTACT</h3>
+            <div id="footer">
+                <pre>Website Template for Practical-8 &copy; <a href="Beta-labs.in">Beta-labs</a>
+                <a href="#top">Back To Top</a></pre>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
