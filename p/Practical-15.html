@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        body {
+            background-image: linear-gradient(120deg,#060930,#92817a);
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .container {
+            margin: auto;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        #less {
+            margin: 30px;
+            height: 60px;
+            width: 60px;
+            background-color: yellowgreen;
+            font-size: 25px;
+            outline: none;
+        }
+        #more {
+            margin: 30px;
+            height: 60px;
+            width: 60px;
+            background-color: yellowgreen;
+            font-size: 25px;
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <div class='container'>
+        <button id="less" onclick="oneless()">-</button>
+        <div id="value">0
+        </div>
+        <button id="more" onclick="onemore()">+</button>
+    </div>
+    
+    <script>
+        var value = parseInt(document.getElementById("value").innerHTML);
+
+        var btn1 = document.getElementById("less");
+        var btn2 = document.getElementById("more");
+
+        btn1.disabled = true;
+        btn2.disabled = false;
+
+        function oneless() {
+            value = value - 1;
+            document.getElementById("value").innerHTML = value;
+            btn2.disabled=false;
+            if (value == 0) {
+                btn1.disabled = true;
+                btn2.disabled = false;
+            }
+        }
+        function onemore() {
+            value = value + 1;
+            document.getElementById("value").innerHTML = value;
+            btn1.disabled = false;
+            if( value == 40) {
+                btn2.disabled = true;
+            }
+        }
+
+    </script>
+</body>
+</html>
